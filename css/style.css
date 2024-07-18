@@ -1,3 +1,45 @@
+@font-face {
+  font-family: "GolosText";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/GolosText-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GolosText";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/GolosText-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Merriweather-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page {
+  min-width: 375px;
+  font-size: 18px;
+  font-family: "GolosText", sans-serif;
+
+}
+
 .visually-hidden {
   position: absolute;
 
@@ -9,4 +51,150 @@
 
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.button {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.page__body {
+  min-width: 100%;
+  margin: 0;
+}
+
+.container {
+  width: 335px;
+  margin: 0 auto;
+}
+
+.page-header {
+  padding: 18px 0 323px;
+  background-image: url("/image/bg-mobile.png");
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-color: #e7dcd1;
+}
+
+.page-header__heading {
+  margin: 36px 0 24px;
+  font-family: "Merriweather", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.heading__part {
+  display: inline-block;
+}
+
+.part__two {
+  margin-left: 64px;
+}
+
+.part__three {
+  margin-left: 30px;
+}
+
+.page-header__discription {
+  margin: 0;
+  line-height: 23px;
+}
+
+.page-header__buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.button__page-pay {
+  padding: 18px;
+  background-color: #1F1F1F;
+  border-radius: 66px;
+  margin-bottom: 8px;
+}
+
+.button__discription {
+  color: #1F1F1F;
+  padding: 18px;
+  background-color: #ffffff;
+  border-radius: 66px;
+}
+
+.events {
+  padding: 48px 0;
+}
+
+.event {
+  display: grid;
+  row-gap: 24px;
+}
+
+.event__one {
+  margin-bottom: 34px;
+  grid-template-areas:
+    "discription--part-one"
+    "discription--part-two";
+}
+
+.event__discription {
+  margin: 0;
+  font-family: "Merriweather", sans-serif;
+  font-size: 28px;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+.event__discription--part-one {
+  grid-area: discription--part-one;
+  position: relative;
+  padding-bottom: 236px;
+}
+
+.event__discription--part-one::after {
+  content: "";
+  position: absolute;
+  width: 335px;
+  height: 213px;
+  top: 175px;
+  left: 0;
+  background-image: url("/image/event-1.jpeg");
+}
+
+.event__discription--part-two {
+  grid-area: discription--part-two;
+}
+
+.event__discription--name {
+  color: #F54932;
+  font-weight: 700;
+}
+
+.event__two {
+  grid-template-areas:
+    "discription"
+    "info";
+}
+
+.event__discription--two {
+  position: relative;
+  grid-area: discription;
+  padding-top: 424px;
+}
+
+.event__discription--two::before {
+  content: "";
+  position: absolute;
+  width: 375px;
+  height: 403px;
+  top: 0;
+  left: -20px;
+  background-image: url("/image/event-2.png");
+}
+
+.event__list {
+  grid-area: info;
 }

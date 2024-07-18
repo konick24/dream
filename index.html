@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,50 +8,54 @@
 </head>
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo logo" href="#">
-      <img class="logo__pic" src="./image/logo.svg" width="213" height="32" alt="Клуб четырёх коней">
-    </a>
-    <h1 class="page-header__heading">Превратите уездный город в сталицу земного шара</h1>
-    <p class="page-header__discription">
-      Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам
-    </p>
-    <span class="page-header__button button">
-      <a class="button__page-pay" href="#">Поддержать шахмаьную мысль</a>
-      <a class="button__discription" href="#">Подробнее о турнире</a>
-    </span>
+    <div class="page-header__container container">
+      <img class="page-header__logo" src="./image/logo.svg" width="213" height="32" alt="Клуб четырёх коней">
+      <h1 class="page-header__heading heading__part part__one">Превратите уездный город <span class="heading__part part__two">в столицу </span><span class="heading__part part__three">земного шара</span></h1>
+      <p class="page-header__discription">
+        Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам
+      </p>
+      <div class="page-header__buttons">
+        <a class="button__page-pay button" href="#">Поддержать шахматную мысль</a>
+        <a class="button__discription button" href="#">Подробнее о турнире</a>
+      </div>
+    </div>
   </header>
   <main class="page-main">
     <section class="page-main__section events">
-      <h2 class="visually-hidden">События</h2>
-      <div class="event">
-        <p class="event__discription">
-          Чтобы поддержать Международный васюкинский турнир посетите лекцию на тему: «Плодотворная дебютная идея»
-        </p>
-        <img class="event__pic" src="">
+      <div class="page-main__container container">
+        <h2 class="visually-hidden">События</h2>
+        <div class="event event__one">
+          <p class="event__discription event__discription--part-one">
+            Чтобы поддержать Международный васюкинский турнир
+          </p>
+          <p class="event__discription event__discription--one event__discription--part-two">
+            Посетите лекцию на тему: <span class="event__discription--name">« Плодотворная дебютная идея»</span>
+          </p>
+          <!-- <img class="event__pic event__pic--one" src="./image/event-1.jpeg" width="335" height="212"> -->
+        </div>
+        <div class="event event__two">
+          <p class="event__discription event__discription--two">
+            и Сеанс одновременной игры в шахматы на 160 досках гроссмейстера О. Бендера
+          </p>
+          <dl class="event__list">
+            <dt class="event__title">Место проведения:</dt>
+            <dd class="event__definition">Клуб "Картонажник"</dd>
+
+            <dt class="event__title">Дата и время мероприятия:</dt>
+            <dd class="event__definition">22 июня 1927 г. в 18:00</dd>
+
+            <dt class="event__title">Стоимость входных билетов:</dt>
+            <dd class="event__definition">20 коп.</dd>
+
+            <dt class="event__title">Плата за игру:</dt>
+            <dd class="event__definition">50 коп.</dd>
+
+            <dt class="event__title">Взнос на телеграмму:</dt>
+            <dd class="event__definition"><span class="discount">100 руб.</span> 21 руб. 16 коп.</dd>
+          </dl>
+        </div>
+        <a class="events__questions" href="#">По всем вопросам обращаться в администрацию к К. Михельсону</a>
       </div>
-      <div class="event">
-        <p class="event__discription">
-          и Сеанс одновременной игры в шахматы на 160 досках гроссмейстера О. Бендера
-        </p>
-        <img class="event__pic" src="">
-        <dl class="event__list">
-          <dt class="event__title">Место проведения:</dt>
-          <dd class="event__definition">Клуб "Картонажник"</dd>
-
-          <dt class="event__title">Дата и время мероприятия:</dt>
-          <dd class="event__definition">22 июня 1927 г. в 18:00</dd>
-
-          <dt class="event__title">Стоимость входных билетов:</dt>
-          <dd class="event__definition">20 коп.</dd>
-
-          <dt class="event__title">Плата за игру:</dt>
-          <dd class="event__definition">50 коп.</dd>
-
-          <dt class="event__title">Взнос на телеграмму:</dt>
-          <dd class="event__definition"><span class="discount">100 руб.</span> 21 руб. 16 коп.</dd>
-        </dl>
-      </div>
-      <a class="events__questions" href="#">По всем вопросам обращаться в администрацию к К. Михельсону</a>
     </section>
     <section class="page-main__section stages">
       <h2 class="stages__heading">Этапы преображения васюков</h2>
@@ -104,37 +108,31 @@
       </div>
       <ul class="participants__list">
         <li class="participants__item">
-          <img class="participants__pic" src="">
           <h3 class="participants__name">Хозе-Рауль Капабланка</h3>
           <p class="participants__discription">Чемпион мира по шахматам</p>
           <a class="participants__button" href="#">Подробнее</a>
         </li>
         <li class="participants__item">
-          <img class="participants__pic" src="">
           <h3 class="participants__name">Эммануил Ласкер</h3>
           <p class="participants__discription">Чемпион мира по шахматам</p>
           <a class="participants__button" href="#">Подробнее</a>
         </li>
         <li class="participants__item">
-          <img class="participants__pic" src="">
           <h3 class="participants__name">Александр Алехин</h3>
           <p class="participants__discription">Чемпион мира по шахматам</p>
           <a class="participants__button" href="#">Подробнее</a>
         </li>
         <li class="participants__item">
-          <img class="participants__pic" src="">
           <h3 class="participants__name">Арон Нимцович</h3>
           <p class="participants__discription">Чемпион мира по шахматам</p>
           <a class="participants__button" href="#">Подробнее</a>
         </li>
         <li class="participants__item">
-          <img class="participants__pic" src="">
           <h3 class="participants__name">Рихард Рети</h3>
           <p class="participants__discription">Чемпион мира по шахматам</p>
           <a class="participants__button" href="#">Подробнее</a>
         </li>
         <li class="participants__item">
-          <img class="participants__pic" src="">
           <h3 class="participants__name">Остап Бендер</h3>
           <p class="participants__discription">Гроссмейстер</p>
           <a class="participants__button" href="#">Подробнее</a>
