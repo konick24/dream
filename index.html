@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Клуб четырёх коней</title>
-  <link rel="stylesheet" href="./css/style.css"
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="page__body">
   <header class="page-header">
@@ -31,73 +31,88 @@
           <p class="event__discription event__discription--one event__discription--part-two">
             Посетите лекцию на тему: <span class="event__discription--name">« Плодотворная дебютная идея»</span>
           </p>
-          <!-- <img class="event__pic event__pic--one" src="./image/event-1.jpeg" width="335" height="212"> -->
         </div>
         <div class="event event__two">
           <p class="event__discription event__discription--two">
-            и Сеанс одновременной игры в шахматы на 160 досках гроссмейстера О. Бендера
+            и Сеанс <span class="event__discription--name">одновременной игры в шахматы на 160 досках</span> гроссмейстера О. Бендера
           </p>
-          <dl class="event__list">
-            <dt class="event__title">Место проведения:</dt>
-            <dd class="event__definition">Клуб "Картонажник"</dd>
-
-            <dt class="event__title">Дата и время мероприятия:</dt>
-            <dd class="event__definition">22 июня 1927 г. в 18:00</dd>
-
-            <dt class="event__title">Стоимость входных билетов:</dt>
-            <dd class="event__definition">20 коп.</dd>
-
-            <dt class="event__title">Плата за игру:</dt>
-            <dd class="event__definition">50 коп.</dd>
-
-            <dt class="event__title">Взнос на телеграмму:</dt>
-            <dd class="event__definition"><span class="discount">100 руб.</span> 21 руб. 16 коп.</dd>
-          </dl>
+          <ul class="event__list">
+            <li class="event__item">
+              <span class="event__title">Место проведения:</span>
+              <span class="event__definition">Клуб "Картонажник"</span>
+            </li>
+            <li class="event__item">
+              <span class="event__title">Дата и время мероприятия:</span>
+              <span class="event__definition">22 июня 1927 г. в 18:00</span>
+            </li>
+            <li class="event__item">
+              <span class="event__title">Стоимость входных билетов:</span>
+              <span class="event__definition">20 коп.</span>
+            </li>
+            <li class="event__item">
+              <span class="event__title">Плата за игру:</span>
+              <span class="event__definition">50 коп.</span>
+            </li>
+            <li class="event__item">
+              <span class="event__title">Взнос на телеграмму:</span>
+              <span class="event__definition"><span class="line">100 руб.</span> 21 руб. 16 коп.</span></span>
+            </li>
         </div>
         <a class="events__questions" href="#">По всем вопросам обращаться в администрацию к К. Михельсону</a>
       </div>
     </section>
     <section class="page-main__section stages">
-      <h2 class="stages__heading">Этапы преображения васюков</h2>
-      <p class="stages__discription">Будущие источники обогащения васюков</p>
-      <ol class="stages__list">
-        <li class="stages__item">
-          <p class="steps__text">
-            Строительство железнодорожной магистрали Москва-Васюки
-          </p>
-        </li>
-        <li class="stages__item">
-          <p class="steps__text">
-            Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
-          </p>
-        </li>
-        <li class="stages__item">
-          <p class="steps__text">
-            Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет
-          </p>
-        </li>
-        <li class="stages__item">
-          <p class="steps__text">
-            Строительство дворца для турнира
-          </p>
-        </li>
-        <li class="stages__item">
-          <p class="steps__text">
-            Размещение гаражей для гостевого автотранспорта
-          </p>
-        </li>
-        <li class="stages__item">
-          <p class="steps__text">
-            Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
-          </p>
-        </li>
-        <li class="stages__item">
-          <p class="steps__text">
-            Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн
-          </p>
-        </li>
-        <img class="steps__pic" src="">
-      </ol>
+      <div class="page-main__container container">
+        <h2 class="stages__heading">Этапы преображения васюков</h2>
+        <p class="stages__discription">Будущие источники обогащения васюков</p>
+        <ol class="stages__list">
+          <div class="stages__item-group">
+            <li class="stages__item">
+              <p class="steps__text">
+                Строительство железнодорожной магистрали Москва-Васюки
+              </p>
+            </li>
+            <li class="stages__item">
+              <p class="steps__text">
+                Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
+              </p>
+            </li>
+          </div>
+          <div class="stages__item-group">
+            <li class="stages__item">
+              <p class="steps__text">
+                Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет
+              </p>
+            </li>
+          </div>
+          <div class="stages__item-group">
+            <li class="stages__item">
+              <p class="steps__text">
+                Строительство дворца для турнира
+              </p>
+            </li>
+            <li class="stages__item">
+              <p class="steps__text">
+                Размещение гаражей для гостевого автотранспорта
+              </p>
+            </li>
+          </div>
+          <div class="stages__item-group">
+            <li class="stages__item">
+              <p class="steps__text">
+                Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
+              </p>
+            </li>
+          </div>
+          <div class="stages__item-group">
+            <li class="stages__item">
+              <p class="steps__text">
+                Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн
+              </p>
+            </li>
+          </div>
+        </ol>
+      </div>
     </section>
     <section class="page-main__section participants">
       <h2 class="participants__heading">Участники турнира</h2>

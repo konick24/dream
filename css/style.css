@@ -43,7 +43,7 @@ img {
   min-width: 375px;
   font-size: 18px;
   font-family: "GolosText", sans-serif;
-
+  line-height: 22px;
 }
 
 .visually-hidden {
@@ -130,7 +130,7 @@ img {
   border-radius: 66px;
 }
 
-.events {
+.page-main__section {
   padding: 48px 0;
 }
 
@@ -156,22 +156,22 @@ img {
 
 .event__discription--part-one {
   grid-area: discription--part-one;
-  position: relative;
-  padding-bottom: 236px;
 }
 
-.event__discription--part-one::after {
+.event__discription--part-two {
+  padding-top: 236px;
+  position: relative;
+  grid-area: discription--part-two;
+}
+
+.event__discription--part-two::before {
   content: "";
   position: absolute;
   width: 335px;
   height: 213px;
-  top: 175px;
+  top: 0;
   left: 0;
-  background-image: url("../image/event-1.jpg");
-}
-
-.event__discription--part-two {
-  grid-area: discription--part-two;
+  background-image: url("../image/event-1.png");
 }
 
 .event__discription--name {
@@ -189,6 +189,7 @@ img {
   position: relative;
   grid-area: discription;
   padding-top: 424px;
+  margin-bottom: 4px;
 }
 
 .event__discription--two::before {
@@ -202,5 +203,86 @@ img {
 }
 
 .event__list {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  list-style: none;
   grid-area: info;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.event__item {
+  grid-column: 1 / -1;
+  padding: 10px 0;
+}
+
+.event__item:not(:last-child) {
+  border-bottom: 2px solid #d0d0d0;
+}
+
+.event__title {
+  display: inline-block;
+  color: #313131;
+  font-size: 20px;
+  line-height: 24px;
+  opacity: 0.7;
+  margin: 6px 0;
+  margin-right: 12px;
+}
+
+.event__definition {
+  margin: 6px 0;
+  font-weight: 700;
+  color: #313131;
+  line-height: 24px;
+  display: inline-block;
+}
+
+.line {
+  text-decoration: line-through solid #F54932;
+}
+
+.events__questions {
+  text-decoration: none;
+  color: #3057A2;
+}
+
+.stages {
+  margin-top: 24px;
+}
+
+.stages__heading {
+  margin: 0;
+  margin-bottom: 12px;
+  font-family: "Merriweather", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.stages__discription {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #3057A2;
+}
+
+.stages__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 175px;
+  position: relative;
+}
+
+.stages__list::before {
+  content: "";
+  position: absolute;
+  background-image: url("../image/aircraft.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 335px;
+  height: 182px;
+  top: 0;
+  left: 0;
 }
