@@ -271,6 +271,7 @@ img {
 .stages__list {
   margin: 0;
   padding: 0;
+  margin-bottom: 28px;
   list-style: none;
   padding-top: 126px;
   position: relative;
@@ -321,5 +322,47 @@ img {
 
 .stages__item + .stages__item {
   margin-top: 28px;
+}
+
+.stages__slider{
+  display: flex;
+  justify-content: center;
+}
+
+.stages__button {
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background-color: #313131;
+  background-image: url("../image/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.stages__button--prev {
+  transform: rotate(180deg);
+}
+
+.pagination__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 13px;
+}
+
+.pagination__item {
+  margin: 0 3px;
+}
+
+.pagination__button {
+  margin: 0;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: #d9d9d9;
 }
 
