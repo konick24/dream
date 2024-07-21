@@ -254,7 +254,7 @@ img {
 
 .stages__heading {
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   font-family: "Merriweather", sans-serif;
   font-size: 36px;
   line-height: 40px;
@@ -264,14 +264,14 @@ img {
 
 .stages__discription {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   color: #3057A2;
 }
 
 .stages__list {
   margin: 0;
   padding: 0;
-  padding-top: 175px;
+  padding-top: 125px;
   position: relative;
 }
 
@@ -284,5 +284,44 @@ img {
   width: 335px;
   height: 182px;
   top: 0;
-  left: 0;
+  left: 7px;
+}
+
+.stages__item-group {
+  display: none;
+  min-height: 300px;
+  padding-top: 44px;
+  padding-left: 51px;
+  padding-right: 30px;
+  background-image: url("../image/bg_stages.png");
+}
+
+.active {
+  display: block;
+}
+
+.stages__item {
+  position: relative;
+  z-index: 0;
+}
+
+.stages__item::marker {
+  background-color: #ffffff;
+  width: 20px;
+  height: 20px;
+}
+
+.stages__item::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  left: -31px;
+  z-index: -1;
+}
+
+.stages__text {
+  padding-left: 21px;
 }
