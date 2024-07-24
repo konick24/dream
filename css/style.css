@@ -366,3 +366,124 @@ img {
   background-color: #d9d9d9;
 }
 
+.participants {
+  padding: 72px 0 100px;
+}
+
+.participants__container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "list"
+    "nav";
+}
+
+.participants__heading {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "Merriweather", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+  grid-area: header;
+}
+
+.participants__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 15px;
+  grid-area: list;
+}
+
+.participants__item {
+  display: grid;
+  padding: 20px 24px;
+  background-color: #ffffff;
+}
+
+.participants__name {
+  margin: 0;
+  padding-top: 272px;
+  position: relative;
+  font-size: 24px;
+  text-align: center;
+  line-height: 29px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.participants__name::before {
+  content: "";
+  position: absolute;
+  width: 244px;
+  height: 244px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../image/participant.svg");
+  background-repeat: no-repeat;
+  background-color: #c7bcad;
+  background-position: 50% 16px;
+  clip-path: circle(122px);
+}
+
+.participants__discription {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+.participants__button {
+  padding: 12px;
+  justify-self: center;
+  color: #3057A2;
+  border: 1px solid #3057A2;
+  border-radius: 62px;
+  background-color: #ffffff;
+}
+
+.participants__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: nav;
+}
+
+.button__nav {
+  padding: 18px;
+  background-color: #313131;
+  border: none;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url("../image/arrow.svg");
+}
+
+.button__nav--right {
+  transform: rotate(180deg);
+}
+
+.button__number {
+  margin: 0 14px;
+}
+
+.page-footer {
+  background-color: #E9DED4;
+}
+
+.page-footer__container {
+  padding: 78px 0 60px;
+}
+
+.page-footer__disclaimer {
+  margin: 0;
+  color: #313131;
+  font-size: 16px;
+  line-height: 19px;
+  opacity: 0.6;
+}
