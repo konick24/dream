@@ -11,6 +11,26 @@
 @font-face {
   font-family: "GolosText";
   font-style: normal;
+  font-weight: 500;
+  src:
+    url("../fonts/GolosText-Medium.woff2") format("woff2"),
+    url("../fonts/GolosText-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GolosText";
+  font-style: normal;
+  font-weight: 600;
+  src:
+    url("../fonts/GolosText-DemiBold.woff2") format("woff2"),
+    url("../fonts/GolosText-DemiBold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GolosText";
+  font-style: normal;
   font-weight: 700;
   src:
     url("../fonts/GolosText-Bold.woff2") format("woff2"),
@@ -25,6 +45,16 @@
   src:
     url("../fonts/Merriweather-Regular.woff2") format("woff2"),
     url("../fonts/Merriweather-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url("../fonts/Merriweather-Bold.woff2") format("woff2"),
+    url("../fonts/Merriweather-Bold.woff") format("woff");
   font-display: swap;
 }
 
@@ -62,6 +92,7 @@ img {
 .button {
   color: #ffffff;
   text-decoration: none;
+  font-weight: 500;
   font-size: 16px;
 }
 
@@ -76,6 +107,8 @@ img {
 }
 
 .page-header {
+  display: flex;
+  flex-direction: column;
   padding: 18px 0 323px;
   background-image: url("../image/bg-mobile.png");
   background-position: 50% 100%;
@@ -110,7 +143,7 @@ img {
 }
 
 .page-header__buttons {
-  margin-top: 30px;
+  margin-top: 32px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -121,6 +154,7 @@ img {
   background-color: #1F1F1F;
   border-radius: 66px;
   margin-bottom: 8px;
+  line-height: 17px;
 }
 
 .button__discription {
@@ -128,6 +162,49 @@ img {
   padding: 18px;
   background-color: #ffffff;
   border-radius: 66px;
+  line-height: 17px;
+}
+
+.page-header__promo {
+  margin-top: -38px;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #F54932;
+}
+
+.promo__line {
+  padding: 8px 0;
+  display: flex;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.promo__text {
+  position: relative;
+  padding: 0 18px 0 12px;
+  color: #ffffff;
+  font-family: "Merriweather", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__text::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: calc(50% - 3px);
+  right: 0;
 }
 
 .page-main__section {
@@ -150,6 +227,7 @@ img {
   margin: 0;
   font-family: "Merriweather", sans-serif;
   font-size: 28px;
+  font-weight: 400;
   line-height: 38px;
   text-transform: uppercase;
 }
@@ -188,7 +266,7 @@ img {
 .event__discription--two {
   position: relative;
   grid-area: discription;
-  padding-top: 424px;
+  padding-top: 427px;
   margin-bottom: 4px;
 }
 
@@ -204,7 +282,7 @@ img {
 
 .event__list {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
   padding: 0;
   list-style: none;
   grid-area: info;
@@ -214,7 +292,7 @@ img {
 
 .event__item {
   grid-column: 1 / -1;
-  padding: 10px 0;
+  padding: 9px 0;
 }
 
 .event__item:not(:last-child) {
@@ -229,13 +307,15 @@ img {
   opacity: 0.7;
   margin: 6px 0;
   margin-right: 12px;
+
 }
 
 .event__definition {
   margin: 6px 0;
-  font-weight: 700;
-  color: #313131;
+  font-size: 20px;
+  font-weight: 600;
   line-height: 24px;
+  color: #313131;
   display: inline-block;
 }
 
@@ -249,7 +329,7 @@ img {
 }
 
 .stages {
-  margin-top: 24px;
+  margin-top: 25px;
 }
 
 .stages__heading {
@@ -301,6 +381,7 @@ img {
 .stages__item {
   position: relative;
   counter-increment: stages;
+  /* letter-spacing: 0.005em; */
 }
 
 .stages__item::before {
@@ -324,6 +405,10 @@ img {
   margin-top: 28px;
 }
 
+.stages__text {
+  font-weight: 500;
+}
+
 .stages__slider{
   display: flex;
   justify-content: center;
@@ -338,7 +423,7 @@ img {
   background-color: #313131;
   background-image: url("../image/arrow.svg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 55% 50%;
 }
 
 .stages__button--prev {
@@ -367,7 +452,7 @@ img {
 }
 
 .participants {
-  padding: 72px 0 100px;
+  padding: 72px 0 138px;
 }
 
 .participants__container {
@@ -393,7 +478,7 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   grid-area: list;
 }
 
@@ -410,7 +495,7 @@ img {
   font-size: 24px;
   text-align: center;
   line-height: 29px;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 8px;
 }
 
@@ -435,7 +520,7 @@ img {
   font-size: 20px;
   text-align: center;
   opacity: 0.6;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .participants__button {
@@ -445,6 +530,7 @@ img {
   border: 1px solid #3057A2;
   border-radius: 62px;
   background-color: #ffffff;
+  line-height: 16px;
 }
 
 .participants__nav {
@@ -477,7 +563,7 @@ img {
 }
 
 .page-footer__container {
-  padding: 78px 0 60px;
+  padding: 41px 0 60px;
 }
 
 .page-footer__disclaimer {
